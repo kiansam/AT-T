@@ -4,7 +4,7 @@ import Link from "next/dist/client/link";
 function BottomNav() {
   return (
     <nav className="relative">
-      <div className="flex px-10 sm:px-16 text-2xl whitespace-nowrap space-x-[58px] sm:space-x-[102px] overflow-x-scroll scrollbar-hide">
+      <div className="flex px-12 sm:px-16 md:px-12 text-2xl whitespace-nowrap space-x-[58px] xs:space-x-[80px] sm:space-x-[102px] md:space-x-[70px] overflow-x-scroll scrollbar-hide">
         {/* <BottomNavItems title={CurrencyDolarIcon} /> */}
         {/* deals */}
         <Link href="">
