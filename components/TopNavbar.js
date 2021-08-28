@@ -4,7 +4,7 @@ import Link from "next/link";
 function TopNavbar() {
   return (
     <header className="flex top-0 items-center bg-white p-1 md:px-5 mb-5">
-      <div className="flex flex-grow md:hidden">
+      <div className="flex flex-grow md:hidden mt-1">
         {/* Left */}
         <div className="flex items-center">
           <div>
@@ -117,11 +117,16 @@ function TopNavbar() {
           </div>
         </div>
       </div>
+
       {/*  */}
       {/*  */}
       {/*  */}
       {/* >md */}
-      <div className="hidden md:flex mt-1">
+      {/*  */}
+      {/*  */}
+      {/*  */}
+
+      <div className="hidden md:flex mt-1 space-x-3 align-middle items-center justify-center">
         <div className="cursor-pointer">
           <Link href="/">
             <a>
@@ -133,6 +138,26 @@ function TopNavbar() {
               </svg>
             </a>
           </Link>
+        </div>
+        <div className="h-[22px] w-[1px] bg-gray-400 items-center inline-block align-middle" />
+
+        <div>
+          <button className="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 inline-block align-middle"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.8}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </header>
